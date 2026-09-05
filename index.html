@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Jishaan ❤️</title>
+<style>
+:root{
+  --bg:#160d18; --card:rgba(255,255,255,.09); --pink:#ff6f9f;
+  --pink2:#ffb1c8; --text:#fff7fb; --muted:#e7cbd5;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; font-family:Georgia, "Times New Roman", serif; color:var(--text);
+  background:radial-gradient(circle at 20% 10%,#4c1d35 0,transparent 30%),
+             radial-gradient(circle at 85% 20%,#311a55 0,transparent 28%),
+             linear-gradient(135deg,#120b16,#2a1020 55%,#0d0b19);
+  overflow-x:hidden;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;
+  background-image:radial-gradient(#fff 1px,transparent 1px);
+  background-size:55px 55px;z-index:-1
+}
+.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.heart{position:absolute;bottom:-30px;animation:float linear infinite;color:#ff7ca7;text-shadow:0 0 15px #ff4f8b}
+.container{position:relative;z-index:1;width:min(1050px,92%);margin:auto}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:50px 0}
+.hero-card{
+  width:min(880px,100%);padding:55px 28px;border:1px solid rgba(255,255,255,.18);
+  border-radius:32px;background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.04));
+  box-shadow:0 20px 70px rgba(0,0,0,.35);backdrop-filter:blur(12px)
+}
+.small{letter-spacing:3px;text-transform:uppercase;color:var(--pink2);font-size:.85rem}
+h1{font-size:clamp(3rem,9vw,7rem);margin:15px 0;color:#ffd6e4;text-shadow:0 0 30px rgba(255,95,145,.5)}
+h2{font-size:clamp(2rem,5vw,4rem);margin:10px 0;color:#ffd7e6}
+h3{font-size:1.5rem}
+p{font-size:1.1rem;line-height:1.8;color:var(--muted)}
+.btn{
+  border:0;border-radius:999px;padding:17px 30px;font-size:1.1rem;cursor:pointer;
+  color:white;background:linear-gradient(135deg,#ff4f88,#a84fff);box-shadow:0 10px 30px rgba(255,65,135,.35);
+  transition:.25s;margin:8px
+}
+.btn:hover{transform:translateY(-3px) scale(1.02)}
+.photo-wrap{margin:35px auto 0;width:min(330px,90%);transform:rotate(2deg)}
+.photo-wrap img{width:100%;display:block;border:12px solid #fff;padding:0;box-shadow:0 18px 45px rgba(0,0,0,.4)}
+.caption{background:#fff;color:#5c2940;padding:13px;font-size:1.25rem}
+section{padding:85px 0}
+.glass{background:var(--card);border:1px solid rgba(255,255,255,.14);border-radius:28px;padding:30px;box-shadow:0 15px 50px rgba(0,0,0,.22)}
+.letter{max-width:800px;margin:auto;text-align:center}
+.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-top:35px}
+.reason{padding:28px;border-radius:22px;background:linear-gradient(145deg,rgba(255,121,163,.16),rgba(115,74,190,.1));border:1px solid rgba(255,255,255,.12);transition:.3s}
+.reason:hover{transform:translateY(-7px)}
+.icon{font-size:2.4rem}
+.open-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-top:30px}
+.open-card{padding:26px;text-align:center;border-radius:22px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14)}
+.open-card button{background:transparent;border:1px solid #ff9bb9;color:#fff;padding:10px 20px;border-radius:999px;cursor:pointer}
+.modal{display:none;position:fixed;inset:0;background:rgba(5,2,8,.78);z-index:20;align-items:center;justify-content:center;padding:20px}
+.modal.show{display:flex}
+.modal-box{max-width:560px;width:100%;text-align:center;padding:40px;border-radius:28px;background:linear-gradient(145deg,#402039,#1e1327);border:1px solid rgba(255,255,255,.2);box-shadow:0 25px 80px #000}
+.close{float:right;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer}
+.surprise{text-align:center}
+.big-heart{font-size:6rem;animation:pulse 1.5s infinite}
+footer{text-align:center;padding:45px 20px;color:#f1b8cb}
+.music-note{font-size:.95rem;color:#e6c2d0;margin-top:10px}
+@keyframes pulse{50%{transform:scale(1.12)}}
+@keyframes float{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+@media(max-width:600px){.hero-card{padding:40px 18px}.glass{padding:22px}section{padding:60px 0}}
+</style>
+</head>
+<body>
+<div class="hearts" id="hearts"></div>
+
+<div class="container">
+<section class="hero">
+  <div class="hero-card">
+    <div class="small">A little surprise, made with love</div>
+    <h1>For Jishaan ❤️</h1>
+    <p>One year of memories, laughter, love, and countless moments that became special simply because they were with you.</p>
+    <button class="btn" onclick="document.getElementById('letter').scrollIntoView()">❤️ Open My Heart</button>
+    <div class="photo-wrap">
+      <img src="soumi_jishaan.jpg" alt="Soumi and Jishaan">
+      <div class="caption">Soumi & Jishaan ❤️</div>
+    </div>
+  </div>
+</section>
+
+<section id="letter">
+  <div class="glass letter">
+    <div class="small">A letter for you</div>
+    <h2>My Dearest Jishaan ❤️</h2>
+    <p>
+      I don't think I can ever put into words exactly how special you are to me.
+      But today, I just want you to remember one thing: <b>you matter so much to me.</b>
+    </p>
+    <p>
+      You are one of the most entertaining, special, and unforgettable people in my life.
+      You have your own way of making moments lighter, making me smile, and turning an ordinary day into something memorable.
+    </p>
+    <p>
+      It has been <b>one beautiful year</b>, and every memory we created together has become a little piece of my heart.
+      Thank you for being you. Please never forget how important and special you are to me. ❤️
+    </p>
+    <p><b>— Always, Soumi 💕</b></p>
+  </div>
+</section>
+
+<section>
+  <div class="letter">
+    <div class="small">Why you're so special</div>
+    <h2>All About You ✨</h2>
+  </div>
+  <div class="reasons">
+    <div class="reason"><div class="icon">😂</div><h3>You entertain me</h3><p>Your funny and entertaining side can make even simple moments feel special.</p></div>
+    <div class="reason"><div class="icon">❤️</div><h3>You are uniquely you</h3><p>There is no one else exactly like you, and that's one of the reasons you mean so much to me.</p></div>
+    <div class="reason"><div class="icon">🫶</div><h3>You are important</h3><p>Your presence has a special place in my life, and I hope you always know that.</p></div>
+    <div class="reason"><div class="icon">✨</div><h3>You make memories special</h3><p>It's not always about where we are or what we do. With you, the moments themselves become memories.</p></div>
+    <div class="reason"><div class="icon">🥹</div><h3>You make me smile</h3><p>Sometimes without even trying, you manage to bring a smile to my face.</p></div>
+    <div class="reason"><div class="icon">💖</div><h3>You are my person</h3><p>After one year, you are still someone I want to celebrate, appreciate, and remind of how special he is.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="letter">
+    <div class="small">For every mood</div>
+    <h2>Open When... 💌</h2>
+  </div>
+  <div class="open-grid">
+    <div class="open-card"><div class="icon">🥺</div><h3>You miss me</h3><button onclick="openMessage('If you miss me, remember that distance or silence can never change the special place you have in my heart. I am always just a thought, a call, or a message away. ❤️')">Open 💌</button></div>
+    <div class="open-card"><div class="icon">😔</div><h3>You're feeling sad</h3><button onclick="openMessage('Hey Jishaan, bad days come and go, but please don't let one difficult moment make you forget how strong and special you are. I believe in you. 🫶')">Open 💌</button></div>
+    <div class="open-card"><div class="icon">⭐</div><h3>You forget your worth</h3><button onclick="openMessage('Let me remind you: you are important, lovable, entertaining, special, and deeply appreciated. Never underestimate the space you hold in my heart. ❤️')">Open 💌</button></div>
+    <div class="open-card"><div class="icon">😂</div><h3>You need a smile</h3><button onclick="openMessage('Official reminder: somewhere there is a girl named Soumi who probably has a reason to smile because of your silly, entertaining self. So smile, Jishaan! 😌❤️')">Open 💌</button></div>
+    <div class="open-card"><div class="icon">❤️</div><h3>You need love</h3><button onclick="openMessage('You are loved more than you realize. Even when I don't say it perfectly, please know that you are precious to me. Always. ❤️')">Open 💌</button></div>
+  </div>
+</section>
+
+<section class="surprise">
+  <div class="glass">
+    <div class="small">One last thing...</div>
+    <div class="big-heart">❤️</div>
+    <h2>Click for your final surprise</h2>
+    <button class="btn" onclick="finalSurprise()">Open Surprise ✨</button>
+    <p class="music-note">🎵 My song choice for us: “Perfect” — Ed Sheeran</p>
+    <button class="btn" onclick="playSong()">🎵 Play Our Song</button>
+  </div>
+</section>
+</div>
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="close" onclick="closeModal()">×</button>
+    <div class="big-heart">💌</div>
+    <h2 id="modalTitle">For Jishaan</h2>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+<footer>
+  Made with all my love ❤️<br>
+  <b>For Jishaan, from Soumi</b><br>
+  One year down, and many more memories to create ✨
+</footer>
+
+<script>
+const hearts=document.getElementById('hearts');
+for(let i=0;i<28;i++){
+  const h=document.createElement('div');
+  h.className='heart'; h.innerHTML='♥';
+  h.style.left=Math.random()*100+'%';
+  h.style.fontSize=(12+Math.random()*25)+'px';
+  h.style.animationDuration=(7+Math.random()*9)+'s';
+  h.style.animationDelay=(-Math.random()*15)+'s';
+  hearts.appendChild(h);
+}
+function openMessage(message){
+  document.getElementById('modalTitle').innerText='A little message from Soumi ❤️';
+  document.getElementById('modalText').innerText=message;
+  document.getElementById('modal').classList.add('show');
+}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+function finalSurprise(){
+  document.getElementById('modalTitle').innerText='My Final Reminder ❤️';
+  document.getElementById('modalText').innerHTML='Jishaan, this whole little website has only one purpose: to remind you that you are incredibly special to me. Thank you for being part of my life and for giving me one year full of memories. Never forget your worth, your smile, or the special place you have in my heart. I love having you in my life. ❤️ — Soumi';
+  document.getElementById('modal').classList.add('show');
+}
+function playSong(){
+  window.open('https://www.youtube.com/results?search_query=Perfect+Ed+Sheeran', '_blank');
+}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
+</script>
+</body>
+</html>
