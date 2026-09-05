@@ -140,9 +140,9 @@ footer{text-align:center;padding:45px 20px;color:#f1b8cb}
     <div class="small">One last thing...</div>
     <div class="big-heart">❤️</div>
     <h2>Click for your final surprise</h2>
-    <button class="btn" onclick="finalSurprise()">Open Surprise ✨</button>
+    <button class="btn" id="finalSurpriseBtn" type="button">Open Surprise ✨</button>
     <p class="music-note">🎵 My song choice for us: “Perfect” — Ed Sheeran</p>
-    <button class="btn" onclick="playSong()">🎵 Play Our Song</button>
+    <button class="btn" id="playSongBtn" type="button">🎵 Play Our Song</button>
   </div>
 </section>
 </div>
@@ -185,8 +185,10 @@ function finalSurprise(){
   document.getElementById('modal').classList.add('show');
 }
 function playSong(){
-  window.open('https://www.youtube.com/results?search_query=Perfect+Ed+Sheeran', '_blank');
+  window.location.href='https://www.youtube.com/results?search_query=Perfect+Ed+Sheeran';
 }
+document.getElementById('finalSurpriseBtn').addEventListener('click', finalSurprise);
+document.getElementById('playSongBtn').addEventListener('click', playSong);
 document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
 </script>
 </body>
